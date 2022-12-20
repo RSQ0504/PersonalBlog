@@ -3,7 +3,7 @@ let ctx = maze.getContext("2d");
 
 let current;
 
-export class Maze{
+export default class Maze{
     constructor(size,row,column){
         this.size       = size;
         this.row        = row;
