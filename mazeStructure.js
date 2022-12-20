@@ -26,7 +26,7 @@ export default class Maze{
     draw(){
         maze.width=this.size;
         maze.height=this.size;
-        maze.style.blackground="black";
+        maze.style.background="black";
         current.visited=true;
 
         for(let r=0;r<this.row;r++){
@@ -80,8 +80,8 @@ class Cell{
         let x = (this.colNumber*size)/column;
         let y = (this.rowNumber*size)/row;
 
-        ctx.strokeStyle = "black";
-        ctx.fillStyle = "black";
+        ctx.strokeStyle = "white";
+        ctx.fillStyle = "blue";
         ctx.lineWidth = 2;
 
         if(this.walls.topWall) this.drawTopWall(x,y,size,column,row);
