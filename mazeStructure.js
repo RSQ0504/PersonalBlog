@@ -118,9 +118,9 @@ class Cell{
     }
     highlight(column){
         let x = (this.colNumber*this.parentSize)/column+1;
-        let y = (this.rowNumber*this.parentGrid)/column+1;
-        ctx.fillStyle="purple";
-        ctx.fillRect(x,y,this.parentSize/column-3,this.parentSize/column-3);
+        let y = (this.rowNumber*this.parentSize)/column+1;
+        ctx.fillStyle="blue";
+        ctx.fillRect(x+1,y+1,this.parentSize/column-3,this.parentSize/column-3);
     }
     removeWall(cell1,cell2){
         let x = cell1.colNumber-cell2.colNumber;
