@@ -10,6 +10,8 @@ export default class Maze{
         this.column     = column;
         this.grid       = [];
         this.stack      = [];
+        this.img = new Image();
+        this.img.src = "source/IMG_5444.JPG";
     }
     setup(){
         for(let r=0;r<this.row;r++){
@@ -38,13 +40,13 @@ export default class Maze{
         if(next){
             next.visited = true;
             this.stack.push(current);
-            current.highlight(this.column);
+            current.highlight(this.column,this.img);
             current.removeWall(current,next);
             current=next;
         }else if(this.stack.length>0){
             let cell = this.stack.pop();
             current = cell;
-            current.highlight(this.column);
+            current.highlight(this.column,this.img);
         }
         if(this.stack.length==0){
             return;
@@ -116,11 +118,10 @@ class Cell{
         ctx.lineTo(x,y+size/row);
         ctx.stroke();
     }
-    highlight(column){
+    highlight(column,img){
         let x = (this.colNumber*this.parentSize)/column+1;
         let y = (this.rowNumber*this.parentSize)/column+1;
-        ctx.fillStyle="blue";
-        ctx.fillRect(x+1,y+1,this.parentSize/column-3,this.parentSize/column-3);
+        ctx.drawImage(img,x+1,y+1,this.parentSize/column-3,this.parentSize/column-3);
     }
     removeWall(cell1,cell2){
         let x = cell1.colNumber-cell2.colNumber;
