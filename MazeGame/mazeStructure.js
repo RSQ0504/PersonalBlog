@@ -11,7 +11,7 @@ export default class Maze{
         this.grid       = [];
         this.stack      = [];
         this.img = new Image();
-        this.img.src = "source/IMG_5444.JPG";
+        this.img.src = "../source/IMG_5444.JPG";
     }
     setup(){
         for(let r=0;r<this.row;r++){
