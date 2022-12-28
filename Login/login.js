@@ -5,7 +5,7 @@ function myFunction(){
     if(user == "David"&&password=="xqq")
     {
         alert("Login Successfully");
-        setTimeout(() =>{window. location.replace ("../index.html");});
+        setTimeout(() =>{window. location.replace ("../Users/David.html");});
     }
     else {
         alert("Invalid information");
