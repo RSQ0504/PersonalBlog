@@ -1,4 +1,4 @@
-button {
+.normalButton {
     background-color: #04AA6D; /* Green background */
     border: 1px solid green; /* Green border */
     color: white; /* White text */
@@ -7,18 +7,18 @@ button {
     float: left; /* Float the buttons side by side */
 }
 
-button:not(:last-child) {
+.normalButton:not(:last-child),.cancelbtn:not(:last-child) {
     border-right: none; /* Prevent double borders */
 }
 
   /* Clear floats (clearfix hack) */
-button:after {
+.normalButton:after,.cancelbtn:after {
     content: "";
     clear: both;
     display: table;
 }
 
-button:hover {
+.normalButton:hover,.cancelbtn:hover {
     opacity: 0.8;
 }
 
@@ -26,6 +26,9 @@ button:hover {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
+    cursor: pointer;
+    color: white;
+    border: 1px solid red;
 }
 
   /* The Close Button (x) */

@@ -14,12 +14,12 @@
     <script type = "text/javascript" src="login.js"></script>
 </head>
 <body>
-    <a href="../index.html"><button>Back</button></a>
+    <a href="../index.html"><button class="normalButton">Back</button></a>
     <p class="clockposition"> Time is <span id="time"> </span></p>
     <script src="../Time/Time.js">   </script>
     <div class="center">
         <h1>User</h1>
-        <centre><button onclick="document.getElementById('id01').style.display='block'">David</button></centre>
+        <centre><button button class="normalButton" onclick="document.getElementById('id01').style.display='block'">David</button></centre>
     </div>
     <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -33,8 +33,8 @@
 
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="Password" id ="psw" required>
-                <button type="submit" onClick="myFunction()">Login</button></a>
-                <button onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button button class="normalButton" type="submit" onClick="myFunction()">Login</button></a>
+                <button button onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
                 <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                 </label>

@@ -6,19 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HandsomeBoy's blog</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="./CSS/button.css">
+    <link rel="stylesheet" href="./CSS/menu.css">
     <link rel="stylesheet" href="./CSS/position.css">
 </head>
 <body>
     <h1>HandsomeBoy's blog</h1>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../MazeGame/mazeGame.html">Maze</a>
+                <a href="./Login/Login.html">login</a>
+            </div>
+        </div> 
+    </div>
     <p style="color: red; font-size: large;">Please login First</p>
     <p class="clockposition"> Time is <span id="time"> </span></p>
     <script src="./Time/Time.js">   </script>
 </body>
 <header>
-    <div class="toprightcorner">
-            <a href="./MazeGame/mazeGame.html"><button>Maze</button></a>
-            <a href="./Login/Login.html"><button>Login</button></a>
-    </div>
 </header>
 </html>
