@@ -3,7 +3,7 @@ function myFunction(){
     let password = document.getElementById("psw").value;
     //alert(user);
 
-    if(user == "David"&&password=="xqq")
+    if(user == "David"&&password=="123")
     {
         //alert("Login Successfully");
         setTimeout(() =>{window. location.replace ("../Users/David.html");});
