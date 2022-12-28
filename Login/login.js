@@ -1,8 +1,8 @@
 function myFunction(){
-    //var user = document.getElementById("usr").value;
-    //var password = document.getElementsByTagName("pwd").value;
-    //let usr = document.getElementByid("uname").value;
-    if(1)
+    let user = document.getElementById("uname").value;
+    let password = document.getElementById("psw").value;
+
+    if(user == "David"&&password=="xqq")
     {
         alert("Login Successfully");
         setTimeout(() =>{window. location.replace ("../index.html");});
