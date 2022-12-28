@@ -45,8 +45,8 @@ button:hover {
 }
 .center{
     position:absolute;
-    top:100px;
-    left: 0 px;
+    top:30%;
+    left:50%;
 }
 
 body {
