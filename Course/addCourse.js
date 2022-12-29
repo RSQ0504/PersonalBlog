@@ -3,7 +3,7 @@ function addCourse(){
     let targetRow = document.getElementById("CTable").insertRow(rowLength);
     let ID = document.getElementById("ID").value;
     let Name = document.getElementById("Name").value;
-    if(ID!=""&&Name!=""){
+    if(ID==""||Name==""){
         return;
     }else{
         targetRow.insertCell(0).innerHTML = "hi";
