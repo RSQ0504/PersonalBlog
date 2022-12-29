@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David's Course</title>
     <script type = "text/javascript" src="findcourse.js"></script>
+    <script type = "text/javascript" src="AddCourse.js"></script>
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../CSS/position.css">
     <link rel="stylesheet" href="../CSS/menu.css">
     <link rel="stylesheet" href="../CSS/image.css">
     <link rel="stylesheet" href="../CSS/table.css">
+    <link rel="stylesheet" href="../CSS/Modal.css">
+    <link rel="stylesheet" href="../CSS/button.css">
+    <link rel="stylesheet" href="../CSS/animate.css">
     <script src="https://kit.fontawesome.com/0483f3f263.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <h1>David's Course</h1>
     <div class="navbar">
         <a href="../Users/David.html"><i class="fa-solid fa-house"></i> Home</a>
+        <button onclick="document.getElementById('Course').style.display='block'"><i class="fa-solid fa-plus"></i> AddCourse</button>
         <a href="couse.html"><i class="fa-solid fa-landmark"></i> Course</a>
         <div class="dropdown">
             <button class="dropbtn"><i class="fa-solid fa-bars"></i> Menu 
@@ -27,6 +32,20 @@
                 <a href="../index.html">Logout</a>
             </div>
         </div> 
+    </div>
+    <div id="Course" class="modal">
+        <span onclick="document.getElementById('Course').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate">
+            <div class="container">
+                <label for="ID"><b>Course ID</b></label>
+                <input type="text" placeholder="Course ID" name="Course ID" id="ID" required>
+
+                <label for="Name"><b>Course Name</b></label>
+                <input type="text" placeholder="Course Name" name="Course Name" id ="Name" required>
+                <button button class="normalButton" type="submit" onClick="addCourse()">Add</button></a>
+                <button button onclick="document.getElementById('Course').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
     </div>
     <div class="imgOfHandsomeBoycontainer">
         <img class="imgOfHandsomeBoy" src="../source/IMG_5444.JPG" alt="Handsome Boy">
