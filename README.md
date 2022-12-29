@@ -4,7 +4,7 @@ Login feature can be find in Menu
 ## Use user David to login ##
 Password is : 123
 
-## problem in couse.html
+## Problem in couse.html
 ```
 <form class="modal-content animate" onsubmit="return false;"> 
     <!-- form will not be submitted or renewed cuz no local file to store the data-->
