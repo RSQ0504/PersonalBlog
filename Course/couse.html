@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David's Course</title>
+    <script type = "text/javascript" src="findcourse.js"></script>
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../CSS/position.css">
     <link rel="stylesheet" href="../CSS/menu.css">
     <link rel="stylesheet" href="../CSS/image.css">
+    <link rel="stylesheet" href="../CSS/table.css">
     <script src="https://kit.fontawesome.com/0483f3f263.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -31,11 +33,50 @@
         <div class="overlay">Rongsheng Qian</div>
     </div>
     <br></br>
-    <br></br>
     <div>
         <i class="fa-solid fa-user"></i>
         <n>Rongsheng Qian </n>
-        <h1>Waiting to be finished</h1>
+    </div>
+    <div>
+        <input type="text" id="ScearchInput" onkeyup="FindCourse()" placeholder="Search for Course ID" title="Type in a name">
+        <table id="CTable" class="myTable">
+            <tr class="header">
+                <th style="width:60%;">Course ID</th>
+                <th style="width:40%;">Course Name</th>
+            </tr>
+            <tr>
+                <td>CMPT 225</td>
+                <td>Data Structures/Programming</td>
+            </tr>
+            <tr>
+                <td>CMPT 276</td>
+                <td>Intro Software Engineering</td>
+            </tr>
+            <tr>
+                <td>CMPT 295</td>
+                <td>Intro. to Computer Systems</td>
+            </tr>
+            <tr>
+                <td>CMPT 310</td>
+                <td>Artificial Intelligence Survey</td>
+            </tr>
+            <tr>
+                <td>CMPT 307</td>
+                <td>Data Structures</td>
+            </tr>
+            <tr>
+                <td>CMPT 363</td>
+                <td>User Interface Design</td>
+            </tr>
+            <tr>
+                <td>CMPT 361</td>
+                <td>Intro to Computer Graphics</td>
+            </tr>
+            <tr>
+                <td>CMPT 410</td>
+                <td>Machine Learning</td>
+            </tr>
+        </table>
     </div>
     <p class="clockposition"> Time is <span id="time"> </span></p>
     <script src="../Time/Time.js">   </script>
