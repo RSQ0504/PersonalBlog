@@ -6,7 +6,7 @@ function addCourse(){
     if(ID==""||Name==""){
         return;
     }else{
-        targetRow.insertCell(0).innerHTML = "hi";
-        targetRow.insertCell(1).innerHTML = "hi";
+        targetRow.insertCell(0).innerHTML = ID;
+        targetRow.insertCell(1).innerHTML = Name;
     }
 }

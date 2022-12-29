@@ -35,14 +35,17 @@
     </div>
     <div id="Course" class="modal">
         <span onclick="document.getElementById('Course').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <form class="modal-content animate">
+        <form class="modal-content animate" onsubmit="return false;"> 
+            <!-- form will not be submitted or renewed cuz no local file to store the data-->
+            <!-- input innerhtml will be lost due to the submit of form -->
             <div class="container">
                 <label for="ID"><b>Course ID</b></label>
                 <input type="text" placeholder="Course ID" name="Course ID" id="ID" required>
 
                 <label for="Name"><b>Course Name</b></label>
                 <input type="text" placeholder="Course Name" name="Course Name" id ="Name" required>
-                <button button class="normalButton" type="submit" onClick="addCourse()">Add</button></a>
+                <!-- motified the onclick due to the reason above -->
+                <button button class="normalButton" type="submit" onClick="addCourse();document.getElementById('Course').style.display='none'">Add</button></a>
                 <button button onclick="document.getElementById('Course').style.display='none'" class="cancelbtn">Cancel</button>
             </div>
         </form>
