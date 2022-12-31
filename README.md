@@ -1,9 +1,16 @@
 # PersonalBlog
 ### Use index.html as begining page. ###
 Login feature can be found in Menu
-## Login ##
+> Login
 User is : David
 Password is : 123
+### Use User/David.html to skip the login part. ###
+The begining page of personal blog
+include:
++ Course table
++ MazeGame
++ Info Page
++ Resume
 
 ## Problem in couse.html
 + Cannot modify (create, write) local files using HTML and browser-side JavaScript currently by browserify-fs.
