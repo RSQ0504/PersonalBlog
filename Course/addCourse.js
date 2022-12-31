@@ -7,7 +7,7 @@ function addCourse(){
     if(ID==""||Name==""){
         return;
     }else{
-        /*
+
         let courseData ={};
         courseData.table=[];
         let courseInfo={
@@ -15,12 +15,13 @@ function addCourse(){
             Name : Name
         };
         courseData.table.push(courseInfo);
-        const fs = require('fs');
+        //const fs = require('fs');
+        const fs = require('browserify-fs');
         fs.appendFile('./CourseList.json', JSON.stringify(courseData), function (err) {
             if (err) throw err;
             console.log('Saved!');
         });
-        */
+
         targetRow.insertCell(0).innerHTML = ID;
         targetRow.insertCell(1).innerHTML = Name;
     }

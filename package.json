@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "browserify-fs": "^1.0.0",
     "fs": "^0.0.1-security"
   }
 }
