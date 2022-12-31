@@ -2,7 +2,7 @@
 ### Use index.html as begining page. ###
 Login feature can be found in Menu
 > Login
-User is : David
+> User is : David
 Password is : 123
 ### Use User/David.html to skip the login part. ###
 The begining page of personal blog
