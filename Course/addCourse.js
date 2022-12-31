@@ -14,8 +14,8 @@ function addCourse(){
             ID : ID,
             Name : Name
         };
-        
         courseData.table.push(courseInfo);
+        const fs = require('fs');
         fs.appendFile('./CourseList.json', JSON.stringify(courseData), function (err) {
             if (err) throw err;
             console.log('Saved!');
