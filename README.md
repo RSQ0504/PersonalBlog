@@ -6,6 +6,8 @@ User is : David
 Password is : 123
 
 ## Problem in couse.html
+Cannot modify (create, write) local files using HTML and browser-side JavaScript currently by browserify-fs.
+Will be solved in further update.
 ```
 <form class="modal-content animate" onsubmit="return false;"> 
     <!-- form will not be submitted or renewed cuz no local file to store the data-->
