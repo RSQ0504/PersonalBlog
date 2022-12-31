@@ -4,7 +4,7 @@ Login feature can be found in Menu
 > Login
 > User is : David
 > <p>Password is : 123</p>
-### Use User/David.html to skip the login part. ###
+### Use Users/David.html to skip the login part. ###
 The begining page of personal blog
 include:
 + Course table
