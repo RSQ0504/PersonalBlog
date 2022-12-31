@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David's Course</title>
     <script type = "text/javascript" src="findcourse.js"></script>
-    <script type = "text/javascript" type="module" src="addCourse.js"></script>
+    <script type="module" src="addCourse.js"></script>
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../CSS/position.css">
     <link rel="stylesheet" href="../CSS/menu.css">
@@ -45,7 +45,7 @@
                 <label for="Name"><b>Course Name</b></label>
                 <input type="text" placeholder="Course Name" name="Course Name" id ="Name" required>
                 <!-- motified the onclick due to the reason above -->
-                <button button class="normalButton" type="submit" onClick="addCourse();document.getElementById('Course').style.display='none'">Add</button></a>
+                <button button class="normalButton" id="Add" type="submit" onClick="document.getElementById('Course').style.display='none'">Add</button></a>
                 <button button onclick="document.getElementById('Course').style.display='none'" class="cancelbtn">Cancel</button>
             </div>
         </form>

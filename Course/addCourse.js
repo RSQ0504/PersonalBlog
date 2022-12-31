@@ -7,7 +7,7 @@ function addCourse(){
     if(ID==""||Name==""){
         return;
     }else{
-        /* ----------To Do ----------
+        /*
         let courseData ={};
         courseData.table=[];
         let courseInfo={
@@ -16,8 +16,7 @@ function addCourse(){
         };
         
         courseData.table.push(courseInfo);
-        const jsonfile = require("fs");
-        jsonfile.appendFile('./CourseList.json', JSON.stringify(courseData), function (err) {
+        fs.appendFile('./CourseList.json', JSON.stringify(courseData), function (err) {
             if (err) throw err;
             console.log('Saved!');
         });
@@ -26,3 +25,5 @@ function addCourse(){
         targetRow.insertCell(1).innerHTML = Name;
     }
 }
+const btn = document.getElementById("Add");
+btn.addEventListener('click', addCourse);
