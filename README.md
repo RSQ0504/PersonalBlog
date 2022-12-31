@@ -3,7 +3,7 @@
 Login feature can be found in Menu
 > Login
 > User is : David
-> Password is : 123
+> <p>Password is : 123</p>
 ### Use User/David.html to skip the login part. ###
 The begining page of personal blog
 include:
