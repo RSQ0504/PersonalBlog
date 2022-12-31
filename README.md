@@ -15,7 +15,7 @@ include:
 ## Problem in couse.html
 + Cannot modify (create, write) local files using HTML and browser-side JavaScript currently by browserify-fs.
 + Will be solved in further update.
-```
+```html
 <form class="modal-content animate" onsubmit="return false;"> 
     <!-- form will not be submitted or renewed cuz no local file to store the data-->
     <!-- input innerhtml will be lost due to the submit of form -->
