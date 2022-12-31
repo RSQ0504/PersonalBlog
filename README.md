@@ -1,6 +1,6 @@
 # PersonalBlog
 ### Use index.html as begining page. ###
-Login feature can be find in Menu
+Login feature can be found in Menu
 ## Login ##
 User is : David
 Password is : 123
